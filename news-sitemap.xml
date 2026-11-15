@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Keep this file empty until real news articles have been published.
+     Generate it with scripts/generate_news_sitemap.py.
+     Google News sitemaps should contain only articles published in the last two days. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+</urlset>
