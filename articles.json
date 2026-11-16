@@ -1,3 +1,75 @@
 {
-  "articles": []
+  "articles": [],
+  "sampleArticles": [
+    {
+      "title": "A practical starting point for mapping supplier risk",
+      "url": "/sample-articles/supplier-risk-mapping.html",
+      "summary": "An illustrative look at supplier mapping, risk prioritisation and due diligence using OECD guidance.",
+      "section": "Manufacturing",
+      "status": "sample"
+    },
+    {
+      "title": "Before buying automation, define the operating problem",
+      "url": "/sample-articles/factory-automation-investment.html",
+      "summary": "A sample framework for evaluating automation through process data, system integration and workforce readiness.",
+      "section": "Manufacturing",
+      "status": "sample"
+    },
+    {
+      "title": "Battery storage value depends on the system service",
+      "url": "/sample-articles/battery-storage-value.html",
+      "summary": "A sample explainer on the different services batteries may provide and the questions behind a bankable project case.",
+      "section": "Energy",
+      "status": "sample"
+    },
+    {
+      "title": "From renewable pipeline to operating project",
+      "url": "/sample-articles/renewable-project-delivery.html",
+      "summary": "A sample checklist for the grid, permitting, procurement and contract questions that can shape renewable project delivery.",
+      "section": "Energy",
+      "status": "sample"
+    },
+    {
+      "title": "Why pharmaceutical quality is built into the process",
+      "url": "/sample-articles/pharma-quality-by-design.html",
+      "summary": "A sample explainer on good manufacturing practice, documentation and quality systems in pharmaceutical production.",
+      "section": "Healthcare",
+      "status": "sample"
+    },
+    {
+      "title": "A lifecycle view of medical device market access",
+      "url": "/sample-articles/medical-device-lifecycle.html",
+      "summary": "A sample framework for examining medical device regulation, procurement, maintenance and post-market responsibilities.",
+      "section": "Healthcare",
+      "status": "sample"
+    },
+    {
+      "title": "A governance-first approach to enterprise AI adoption",
+      "url": "/sample-articles/enterprise-ai-risk.html",
+      "summary": "A sample guide to mapping AI use cases, responsibilities and risks before scaling a deployment.",
+      "section": "Technology",
+      "status": "sample"
+    },
+    {
+      "title": "Cyber resilience for connected industrial operations",
+      "url": "/sample-articles/industrial-cyber-resilience.html",
+      "summary": "A sample framework for connecting operational technology security with business continuity and incident response.",
+      "section": "Technology",
+      "status": "sample"
+    },
+    {
+      "title": "A documentation-first checklist for export readiness",
+      "url": "/sample-articles/export-documentation-readiness.html",
+      "summary": "A sample explainer using WTO trade facilitation provisions to organise cross-border shipment questions.",
+      "section": "Business",
+      "status": "sample"
+    },
+    {
+      "title": "Market entry diligence should include impacts and dependencies",
+      "url": "/sample-articles/international-market-entry-diligence.html",
+      "summary": "A sample framework for combining commercial readiness with responsible-business due diligence.",
+      "section": "Business",
+      "status": "sample"
+    }
+  ]
 }

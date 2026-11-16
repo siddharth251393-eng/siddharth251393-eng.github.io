@@ -1,53 +1,44 @@
-INDUSTRYWIRE STARTER — READ BEFORE PUBLISHING
+INDUSTRYWIRE — SITE NOTES
 
-WHAT THIS IS
-A static, zero-cost website starter for a proposed English-language, multi-industry publication. It includes the homepage, industry sections, publisher transparency pages, an article template, basic NewsArticle structured data, robots.txt, a standard sitemap and a script to generate a Google News sitemap.
+PROJECT
+IndustryWire is a static, zero-cost business and industry publication concept hosted on GitHub Pages. The site uses the existing IndustryWire identity, HTML, CSS and JavaScript. No build system, paid service, analytics, newsletter backend, database or payment processor is required.
 
-IMPORTANT LIMITS
-1. This is a prototype, not a live website and not Google-approved.
-2. Google News has no manual approval application. Google automatically discovers and considers eligible content. Inclusion and ranking are never guaranteed.
-3. Replace every occurrence of YOUR-DOMAIN.example and every bracketed placeholder before launch.
-4. Replace the provisional name IndustryWire after checking domain and trademark availability.
-5. Do not publish sample or fabricated news. The sections intentionally contain no fake stories.
-6. Do not publish the Privacy Policy until you have completed it to match the actual data practices and applicable law.
-7. A free GitHub Pages URL can host the prototype, but for a serious publisher identity and better long-term control, plan to use a custom domain when affordable.
-8. This static version has no login, upload dashboard, database, payment processing or newsletter backend. We can add these only after validating demand and choosing a free/low-cost service. For now, receive submissions by email and manually review them.
-9. Never sell Google News placement, guaranteed rankings or guaranteed inclusion. Charge only for clearly disclosed publishing services, and retain editorial control.
+LIVE SITE
+https://siddharth251393-eng.github.io/
 
-DEPLOY FREE WITH GITHUB PAGES
-1. Create a GitHub account at https://github.com/
-2. Create a new public repository named YOUR-USERNAME.github.io
-3. Upload the contents of this folder (not the ZIP itself) to the repository root.
-4. In repository Settings > Pages, select Deploy from a branch, choose main and /(root), then Save.
-5. Wait for GitHub Pages to publish. The URL will be https://YOUR-USERNAME.github.io/
-6. Replace canonical URLs, sitemap URLs, robots.txt and BASE_URL in scripts/generate_news_sitemap.py with the exact live URL. Update sitemap.xml accordingly.
-7. Open the live site on phone and desktop and test every link.
+EDITING CONTACT DETAILS
+Change the public contact email in site-config.js. Contact links and the email draft form use that value. Review the About, Contact, Corrections and Privacy pages after any change.
 
-BEFORE GOOGLE SEARCH CONSOLE
-- Verify the exact live URL in Search Console using a supported verification method.
-- Submit sitemap.xml.
-- Inspect the homepage and each article URL with URL Inspection.
-- Make sure pages are public, return HTTP 200, are not blocked by robots.txt and do not contain noindex.
-- Use the Google Rich Results Test / Schema Markup Validator to check structured data.
-- Submit news-sitemap.xml only after publishing real news stories; keep only URLs from the last 2 days in it.
-- Search Console indexing is not Google News inclusion. Monitor the Google News performance report if it becomes available.
+PUBLISHING ARTICLES
+- Do not publish a story until its facts and sources have been independently checked.
+- Use article-template.html as a starting layout. It is marked noindex and must not be linked as an article.
+- Editorial demonstrations are listed under sampleArticles in articles.json and have individual noindex pages in sample-articles/. They are examples, not news; do not move them into the published articles array without fact-checking, assigning a real author and completing editorial review.
+- Keep articles.json articles[] for published articles only. The newsroom page reads that array and does not surface the sampleArticles array.
+- Give every article a permanent URL, a named responsible author, accurate original publication and update dates, working primary-source links, a self-referencing canonical URL and matching Article/NewsArticle data only when applicable.
+- Add published article URLs to sitemap.xml.
+- Keep news-sitemap.xml empty until real news is published. Then include only news URLs first published in the last two days and remove older entries; follow Google’s current news sitemap rules.
+- Do not represent concepts, press releases or sample text as independently verified reporting.
 
-EDITORIAL LAUNCH CHECKLIST
-- Put real publisher/legal name, country, editorial email and business contact on About/Contact.
-- Add named author profiles and accurate biographies.
-- Adopt editorial, corrections and sponsored-content policies.
-- Verify each claim and link to primary sources.
-- Get permission/licences for text, images, charts and supplied materials.
-- Label press releases and paid material prominently.
-- Do not disguise paid material as independent reporting.
-- Avoid mass-produced, lightly rewritten, duplicate or unverified AI content.
-- Publish consistently only when there is a genuinely useful development to report.
+RESEARCH CATALOGUE
+The listings on research.html are proposed scopes only, not completed reports or findings. Before accepting paid work, agree the question, sources, geographic coverage, deliverables, timing and commercial terms directly with the client. There is no checkout or subscription system.
 
-GOOGLE DOCUMENTATION
-Google News discovery: https://support.google.com/news/publisher-center/answer/9606634
-Google News policies: https://support.google.com/news/publisher-center/answer/6204050
-Technical guidelines: https://support.google.com/news/publisher-center/answer/9606708
-News sitemap: https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap
-Search Console: https://search.google.com/search-console/
+CONTACT AND DATA
+The contact form prepares an email draft in the visitor’s own mail app. It does not send or store the form. The site has no newsletter collection, analytics or account system. Update privacy.html if those practices change.
 
-MOBILE UPLOAD NOTE: This ZIP has been flattened so all website files are in one folder. Extract it on Android, open the extracted folder, select all files, and upload them together to the GitHub repository root.
+SEARCH AND ACCESSIBILITY
+Search, category filters, mobile navigation, article-share controls and the contact draft are implemented in site.js. Keep keyboard access, clear labels and responsive behavior when changing the pages.
+
+TECHNICAL FILES
+- style.css — visual system and responsive layouts
+- site.js — navigation, catalogue filtering, search, email draft and share controls
+- site-config.js — public contact email
+- robots.txt — crawl access and sitemap locations
+- sitemap.xml — current public page URLs
+- news-sitemap.xml — intentionally empty until real news coverage exists
+- favicon.svg and social-card.svg — IndustryWire brand assets
+
+GOOGLE SEARCH AND NEWS
+Google may crawl public pages, but indexing, visibility and Google News inclusion are not guaranteed. Verify the site in Search Console, submit sitemap.xml, inspect article URLs and validate structured data after publishing. Google News sitemap guidance: https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap
+
+EDITORIAL AND PUBLISHER DETAILS
+IndustryWire is currently the publication name; legal publishing entity details have not been established on this site. Do not add unverified claims about company status, staff, audience, circulation, credentials or years of operation. Review legal and privacy wording against the actual business and applicable requirements before relying on it as formal advice.
