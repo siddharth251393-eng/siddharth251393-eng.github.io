@@ -19,6 +19,7 @@
 .home-hero-copy{position:relative;z-index:1;max-width:620px}
 .home-hero .eyebrow{color:#176b78;font-size:11px;letter-spacing:1.55px}
 .home-hero h1{max-width:650px;margin:0 0 19px;color:#132f40;font:800 clamp(42px,5.25vw,70px)/1.04 Manrope,Arial,sans-serif;letter-spacing:-2.8px}
+.home-hero .hero-tagline{max-width:560px;margin:-5px 0 9px;color:#176b78;font-size:18px;font-weight:700;line-height:1.45}
 .home-hero .hero-copy{max-width:560px;color:#4d6570;font-size:17px;line-height:1.65}
 .home-hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:25px}
 .home-hero-actions .button{gap:12px;margin:0;background:linear-gradient(110deg,#165d78,#248895);color:#fff;padding:13px 19px;border-radius:7px;box-shadow:0 8px 18px rgba(23,107,135,.15)}
@@ -89,3 +90,9 @@
 @media(max-width:1000px){.site-header nav{gap:14px}.home-hero{grid-template-columns:1fr .82fr;padding:44px}.home-hero h1{font-size:clamp(40px,5.3vw,58px)}.home-editorial{grid-template-columns:55px 1fr 1fr;gap:22px}}
 @media(max-width:800px){.site-header nav{gap:3px}.home-hero{grid-template-columns:1fr;gap:8px;min-height:0;padding:40px 38px}.home-hero-copy{max-width:670px}.home-hero-art{width:min(76%,460px);justify-self:center;margin-top:4px}.home-proof{margin-bottom:64px}.home-proof>div{padding:4px 12px}.home-editorial{grid-template-columns:48px 1fr;gap:17px 22px}.editorial-steps{grid-column:2;border-left:0;border-top:1px solid rgba(255,255,255,.25);padding:12px 0 0}.newsroom-panel{grid-template-columns:58px 1fr}.newsroom-contact{grid-column:2;justify-self:start}.home-research{grid-template-columns:1fr}.research-preview{max-width:540px;width:100%}}
 @media(max-width:520px){.home-main{padding:0 16px}.home-hero{margin:18px 0 29px;padding:31px 23px 22px;border-radius:17px}.home-hero h1{font-size:clamp(38px,11vw,50px);letter-spacing:-1.8px}.home-hero .hero-copy{font-size:15px}.home-hero-actions{display:grid;grid-template-columns:1fr}.home-hero-actions .button{width:100%}.home-hero-art{width:100%;margin-top:0}.home-status{font-size:11px}.home-proof{grid-template-columns:1fr;gap:0;margin:0 3px 55px;padding:7px 0}.home-proof>div{padding:12px 5px;border-right:0;border-bottom:1px solid var(--line)}.home-proof>div:last-child{border-bottom:0}.home-section{padding-bottom:59px}.home-section-head{display:block}.home-section-head .text-link{display:inline-block;margin-top:10px}.home-sector-grid{grid-template-columns:1fr}.home-sector-grid .sector-card{min-height:154px}.home-editorial{grid-template-columns:1fr;gap:10px;margin-bottom:58px;padding:28px 23px;border-radius:15px}.home-editorial .editorial-number{margin-bottom:4px}.editorial-steps{grid-column:auto;margin-top:8px;padding-top:10px}.home-newsroom{padding-bottom:58px}.home-section-head .newsroom-label{display:inline-flex;margin-top:12px}.newsroom-panel{grid-template-columns:1fr;gap:12px;padding:22px}.newsroom-mark{width:48px;height:48px}.newsroom-contact{grid-column:auto}.home-research{gap:22px;margin-bottom:56px;padding:25px 21px}.research-preview{min-height:190px;padding:21px}.research-preview>strong{margin-top:89px}.research-bars{left:21px;right:21px}.home-contact{align-items:flex-start;flex-direction:column;margin-bottom:55px;padding:24px 21px}.home-contact .button{width:100%;justify-content:center}}
+
+
+/* Comfortable tap targets for touch and keyboard users. */
+.site-header nav a{display:flex;align-items:center;min-height:44px}
+.nav-toggle,.nav-cta,.button,.newsroom-contact,.filter-row button,.search-row button,.share-row button{min-height:44px}
+.back-top{width:44px;height:44px}

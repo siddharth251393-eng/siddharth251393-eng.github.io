@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Intentionally empty until IndustryWire publishes verified news articles.
+<!-- Intentionally empty until the independent newsroom publishes eligible news articles.
+     Do not add client-paid promotional pages to this editorial news sitemap.
      Once reporting begins, keep only article URLs first published in the last two days. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">

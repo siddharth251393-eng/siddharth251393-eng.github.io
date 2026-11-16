@@ -1,0 +1,7 @@
+[build]
+  command = "python3 scripts/build_site.py"
+  publish = "dist"
+
+[build.environment]
+  PUBLIC_INDEXING = "false"
+  GSC_VERIFICATION = "7pI3EidN17qKMnA4OzrwyG1MMaPsmLOIjlRYfCDkOyY"

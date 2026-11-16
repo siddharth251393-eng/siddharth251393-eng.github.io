@@ -1,0 +1,4 @@
+# Generated static deployment output
+/dist/
+__pycache__/
+*.py[cod]
