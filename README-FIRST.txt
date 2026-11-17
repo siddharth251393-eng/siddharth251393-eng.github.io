@@ -52,7 +52,7 @@ RESEARCH CATALOGUE
 The listings on research.html are proposed scopes only, not completed reports or findings. Before accepting research work, agree the question, sources, geography, deliverables, timing, capability and commercial terms directly with the client. No subscription or checkout is active.
 
 PRIVACY AND DATA
-The site currently has no newsletter collection, active analytics IDs, user accounts, hosted form or payment system. Email enquiries are sent only if a visitor chooses to send the prepared draft from their own mail app. The build supports optional Google Analytics and Microsoft Clarity IDs, but loads those tags only after visitor consent. Set `GA_MEASUREMENT_ID` and/or `CLARITY_PROJECT_ID` in Netlify only after the relevant account setup is complete. Review privacy.html and all provider terms before enabling measurement.
+The site currently has no newsletter collection, user accounts, hosted form or payment system. Email enquiries are sent only if a visitor chooses to send the prepared draft from their own mail app. Google Analytics 4 and Microsoft Clarity IDs are configured in Netlify; both tags load only after visitor consent. Review privacy.html and provider terms before changing measurement behavior.
 
 TECHNICAL FILES
 - style.css — visual system and responsive layouts

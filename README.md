@@ -8,7 +8,7 @@ The code remains in GitHub. The existing GitHub Pages site is unchanged; the sep
 
 The current phase is audience-building: original independent newsroom coverage and reader trust come first. Paid publishing and subscriptions are long-term plans, not services currently open to customers. The site has no checkout, payment, upload, fixed pricing, promised turnaround or external syndication network. Any future paid client publishing must remain separate from independent newsroom coverage. See [BUSINESS-MODEL.md](BUSINESS-MODEL.md) for the working offer, delivery flow and launch gates.
 
-Analytics account setup is in progress. The Netlify preview remains noindex. The build can load Google Analytics and Microsoft Clarity only when `GA_MEASUREMENT_ID` and/or `CLARITY_PROJECT_ID` are set in Netlify; visitors must then opt in through the consent panel. Do not enable public indexing before the final domain and launch checks are complete.
+Google Analytics 4 and Microsoft Clarity IDs are configured in Netlify, and both tags load only after a visitor opts in through the consent panel. The Netlify preview remains noindex. Do not enable public indexing before the final domain and launch checks are complete.
 
 ## Pages
 

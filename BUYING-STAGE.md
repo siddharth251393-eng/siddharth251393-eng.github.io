@@ -1,6 +1,6 @@
 # IndustryWire: launch and domain handoff
 
-**Status:** The static newsroom foundation and a public Netlify preview are prepared. The Netlify project is connected to GitHub and the preview is deliberately noindex. No custom domain or paid hosting has been purchased. The latest article, graphics, accessibility and editorial-note changes are local and uncommitted; they are not visible on the public preview yet.
+**Status:** The static newsroom foundation and a public Netlify preview are prepared. The Netlify project is connected to GitHub and the preview is deliberately noindex. No custom domain or paid hosting has been purchased. The latest article, graphics, accessibility and editorial-note changes are committed and deployed to the preview; articles remain unpublished until editorial review.
 
 ## What is ready
 
@@ -11,16 +11,13 @@
 - The working copy has four unpublished drafts. Three were recently revised; the WPI story has a set of three original SVG graphics. All require final human editorial review before publication. The older steel-data draft needs a fresh currency check.
 - Kavita is identified as publisher, not owner. The owner/legal entity details are still unconfirmed and must not be invented.
 - The Netlify preview URL-prefix property was verified in Google Search Console. Because the preview is noindex, no indexing request or sitemap submission was made for it.
-- Local privacy/measurement wiring is prepared: Google Analytics 4 and Microsoft Clarity load only when configured with their public project IDs and accepted by a visitor. The contact metric is only `contact_draft_opened`; it does not mean an email was sent or received. The consent and privacy changes are not yet on the live preview.
-- The GA4 property and web stream were created, but its `G-...` measurement ID has not yet been added to Netlify. Clarity setup is still incomplete and its project ID is not available. No visitor tracking is active on the current preview.
+- The preview has a consent panel for optional Google Analytics 4 and Microsoft Clarity. Both project IDs are configured in Netlify and the successful rebuild is live. Tags load only after a visitor opts in; the page was verified to show no external analytics tags before consent. No opted-in data collection has yet been verified.
+- The Clarity project is named “IndustryWire Preview” and uses the “Other” industry category. Its project ID and the GA4 measurement ID are stored in Netlify environment variables rather than committed to source. The contact metric is only `contact_draft_opened`; it does not mean an email was sent or received.
 - The initial owner dashboard can combine GA4 traffic with Clarity heatmaps/recordings after both are installed and Clarity is linked to the GA4 property. Search Console remains a separate search-performance view; the contact inbox remains the source of truth for actual enquiries. There is no form-submission database or customer dashboard.
 
 ## What is not finished
 
-1. **Final local review and preview update.** Review the latest local changes and responsive article/graphic presentation. They have not been committed or pushed, so the public preview still reflects the last deployed commit.
-   - Finish Clarity project creation and retrieve its project ID; retrieve the GA4 web-stream measurement ID. These IDs are not passwords, but they should be configured in Netlify environment variables rather than committed to source.
-   - Add the IDs in Netlify, deploy the preview, verify the consent choices and confirm opted-in data appears in each service. Verify a draft-open event only; never treat it as a delivered enquiry.
-   - Link the GA4 web stream to Clarity from Clarity Settings → Setup → Google Analytics integration. Add saved links/bookmarks for Search Console and the inbox to the owner’s operating dashboard. A consolidated reporting dashboard can be considered after traffic data exists.
+1. **Analytics follow-through.** The consent-gated IDs are configured in Netlify and the preview has rebuilt successfully. Verify actual GA4 and Clarity collection after an authorized visitor opts in, and keep the preview noindex. Link the GA4 web stream to Clarity from Clarity Settings → Setup → Google Analytics integration. Add saved links/bookmarks for Search Console and the inbox to the owner’s operating dashboard. A consolidated reporting dashboard can be considered after traffic data exists.
 2. **Domain choice and availability.** Check the exact spelling and extension, registration and renewal cost, and whether the name is suitable for the intended markets before purchase. No domain has been bought. Any trademark/name clearance is separate from checking technical domain availability.
 3. **Editorial readiness.** Recheck article facts, dates and source-use rights at publication time; obtain human editorial approval; ensure the byline and publication date are real and accurate. Drafts stay out of the site feed and sitemap until approved.
 4. **Production-domain setup.** After selecting a domain, add it to the host, choose one preferred HTTPS host, update canonicals, social metadata, structured-data URLs and sitemaps, verify the final domain in Search Console and submit the regular sitemap. Remove noindex only when the site and launch information are ready. Google visibility or Google News inclusion cannot be guaranteed.
