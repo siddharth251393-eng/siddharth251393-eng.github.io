@@ -15,6 +15,7 @@ import re
 import shutil
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from email.utils import format_datetime
 from pathlib import Path
 
 
@@ -257,6 +258,57 @@ def write_article_sitemaps(articles: list[dict[str, str]], origin: str) -> None:
     )
 
 
+def write_rss_feed(articles: list[dict[str, str]], origin: str) -> None:
+    """Generate a summary-only RSS feed from explicitly published stories."""
+    rss_namespace = "http://www.w3.org/2005/Atom"
+    dc_namespace = "http://purl.org/dc/elements/1.1/"
+    ET.register_namespace("atom", rss_namespace)
+    ET.register_namespace("dc", dc_namespace)
+    root = ET.Element("rss", {"version": "2.0"})
+    channel = ET.SubElement(root, "channel")
+    ET.SubElement(channel, "title").text = "IndustryWire"
+    ET.SubElement(channel, "link").text = origin + "/"
+    ET.SubElement(channel, "description").text = (
+        "Independent, sourced reporting on business and industry."
+    )
+    ET.SubElement(channel, "language").text = "en"
+    ET.SubElement(
+        channel,
+        f"{{{rss_namespace}}}link",
+        {"href": origin + "/rss.xml", "rel": "self", "type": "application/rss+xml"},
+    )
+    ET.SubElement(channel, "lastBuildDate").text = format_datetime(
+        datetime.now(timezone.utc), usegmt=True
+    )
+
+    sorted_articles = sorted(
+        articles,
+        key=lambda article: datetime.fromisoformat(
+            article["datePublished"].replace("Z", "+00:00")
+        ),
+        reverse=True,
+    )
+    for article in sorted_articles:
+        published_at = datetime.fromisoformat(
+            article["datePublished"].replace("Z", "+00:00")
+        )
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = article["title"]
+        story_url = origin + article["url"]
+        ET.SubElement(item, "link").text = story_url
+        ET.SubElement(item, "guid", {"isPermaLink": "true"}).text = story_url
+        ET.SubElement(item, "description").text = article["summary"]
+        ET.SubElement(item, "category").text = article["section"]
+        ET.SubElement(item, f"{{{dc_namespace}}}creator").text = article["author"]
+        ET.SubElement(item, "pubDate").text = format_datetime(
+            published_at.astimezone(timezone.utc), usegmt=True
+        )
+
+    ET.ElementTree(root).write(
+        DIST / "rss.xml", encoding="utf-8", xml_declaration=True
+    )
+
+
 def main() -> None:
     origin = site_origin()
     publishable = os.environ.get("PUBLIC_INDEXING", "false").strip().lower() == "true"
@@ -278,6 +330,28 @@ def main() -> None:
             continue
         text = source.read_text(encoding="utf-8")
         text = text.replace(ORIGIN_PLACEHOLDER, origin)
+
+        # The noindex preview deliberately omits story files. Replace the
+        # homepage's production feature card so it cannot point to a missing
+        # article on the temporary host.
+        if source.name == "index.html" and not publishable:
+            preview_panel = (
+                '<div class="newsroom-panel"><div class="newsroom-mark" aria-hidden="true">IW</div>'
+                '<div><p class="eyebrow">NOINDEX PREVIEW</p>'
+                '<h3>Newsroom coverage is being prepared</h3>'
+                '<p>The temporary preview does not expose article pages while public indexing is disabled.</p>'
+                '<a class="text-link" href="/editorial-policy.html">Read our editorial standards</a></div>'
+                '<a class="newsroom-contact" href="/contact.html?type=Editorial%20enquiry">Send an editorial note</a></div>'
+            )
+            text, replacements = re.subn(
+                r'<div class="newsroom-panel">.*?</div>\s*</section>',
+                preview_panel + "\n  </section>",
+                text,
+                count=1,
+                flags=re.DOTALL,
+            )
+            if replacements != 1:
+                raise SystemExit("index.html: expected one homepage newsroom panel to update for the noindex preview.")
 
         # The newsroom archive becomes indexable only once a reviewed article
         # exists and the production build explicitly enables public indexing.
@@ -403,6 +477,17 @@ def main() -> None:
             if rel_path != "404.html":
                 canonical = f'<link rel="canonical" href="{origin}{page_path}">'
                 text = text.replace("</head>", f"{canonical}</head>", 1)
+                feed_link = (
+                    f'<link rel="alternate" type="application/rss+xml" '
+                    f'title="IndustryWire RSS feed" href="{origin}/rss.xml">'
+                )
+                text = re.sub(
+                    r'\s*<link\s+rel=["\']alternate["\'][^>]*type=["\']application/rss\+xml["\'][^>]*>',
+                    "",
+                    text,
+                    flags=re.IGNORECASE,
+                )
+                text = text.replace("</head>", feed_link + "</head>", 1)
             if not publishable:
                 robots_meta = '<meta name="robots" content="noindex,nofollow">'
                 if re.search(r'<meta\s+name=["\']robots["\']', text, flags=re.IGNORECASE):
@@ -424,6 +509,8 @@ def main() -> None:
 
     if publishable and published_articles:
         write_article_sitemaps(published_articles, origin)
+
+    write_rss_feed(published_articles, origin)
 
     if not publishable:
         # A noindex preview should not advertise sitemap URLs as indexable.

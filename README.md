@@ -21,6 +21,7 @@ Google Analytics 4 and Microsoft Clarity IDs are configured in Netlify, and both
 - Ten source-linked editorial demonstrations, marked as samples and excluded from the newsroom feed and sitemap
 - Four source-linked, unpublished story drafts in `drafts/` (IIP, WPI and ACC tender drafts recently revised; WPI now has three original graphics; the older steel-data draft still needs a currency check), plus publisher and Editorial Desk profiles
 - A guarded article release workflow: reviewed story pages live under `stories/`; the production build validates the visible headline, byline and date, generates NewsArticle data, and updates both sitemaps. The current Netlify preview has public indexing disabled, so it remains noindex and does not expose story files or article data.
+- An RSS 2.0 feed at `/rss.xml` is generated at build time from explicitly published stories only. It contains linked summaries, never draft or sample articles, and is empty on noindex builds. Page headers advertise the feed to compatible readers.
 - Custom `404.html`, site audit and pre-purchase hosting/domain handoff
 
 ## Local preview
