@@ -3,7 +3,7 @@
   publish = "dist"
 
 [build.environment]
-  PUBLIC_INDEXING = "false"
-  GSC_VERIFICATION = "7pI3EidN17qKMnA4OzrwyG1MMaPsmLOIjlRYfCDkOyY"
+  PUBLIC_INDEXING = "true"
+  GSC_VERIFICATION = "O7PfE0VaxtLzptpo7o7Wv3NuoD74TdA9DQXwD0odzW8"
   # Add GA_MEASUREMENT_ID and/or CLARITY_PROJECT_ID in Netlify only after the projects are created.
   # The build loads optional tracking tags behind the visitor consent panel.

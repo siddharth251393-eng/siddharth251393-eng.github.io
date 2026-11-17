@@ -226,7 +226,7 @@ def write_article_sitemaps(articles: list[dict[str, str]], origin: str) -> None:
     ET.register_namespace("", namespace)
     known = {node.text for node in root.findall(f"{{{namespace}}}url/{{{namespace}}}loc")}
 
-    urls = ["/articles.html"] + [article["url"] for article in articles]
+    urls = (["/articles.html"] if articles else []) + [article["url"] for article in articles]
     for path in urls:
         absolute = origin + path
         if absolute not in known:
