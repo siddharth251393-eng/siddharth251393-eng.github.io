@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">India WPI inflation by major group, September to October 2026</title>
+  <desc id="desc">Year-on-year inflation rates: Primary Articles rose from 8.67 to 9.24 percent; Fuel and Power from 25.85 to 32.84 percent; Manufactured Products eased from 9.76 to 9.54 percent; Food Index eased from 8.66 to 8.58 percent. October values are provisional.</desc>
+  <rect width="1200" height="675" fill="#102333"/>
+  <g font-family="Arial,sans-serif">
+    <rect x="64" y="48" width="8" height="68" rx="4" fill="#52b4bd"/>
+    <text x="94" y="74" fill="#b7dce1" font-size="16" font-weight="700" letter-spacing="2.5">INDUSTRYWIRE  /  DATA EXPLAINER</text>
+    <text x="94" y="130" fill="#ffffff" font-size="40" font-weight="700">Fuel &amp; Power moved fastest</text>
+    <text x="94" y="165" fill="#bad0d6" font-size="18">Annual inflation rates by major WPI group · September → October 2026</text>
+    <g fill="#a9c7d0" font-size="15">
+      <text x="358" y="216">0%</text><text x="500" y="216">10%</text><text x="646" y="216">20%</text><text x="793" y="216">30%</text><text x="858" y="216">35%</text>
+    </g>
+    <g stroke="#355463" stroke-width="1">
+      <line x1="360" y1="230" x2="360" y2="534"/><line x1="505" y1="230" x2="505" y2="534"/><line x1="650" y1="230" x2="650" y2="534"/><line x1="795" y1="230" x2="795" y2="534"/><line x1="867" y1="230" x2="867" y2="534"/>
+    </g>
+    <g font-size="20" fill="#ffffff" font-weight="700">
+      <text x="64" y="282">Primary Articles</text><text x="64" y="354">Fuel &amp; Power</text><text x="64" y="426">Manufactured Products</text><text x="64" y="498">Food Index</text>
+    </g>
+    <g stroke-linecap="round">
+      <line x1="486" y1="275" x2="494" y2="275" stroke="#72c6c8" stroke-width="9"/><circle cx="486" cy="275" r="8" fill="#9eb5ee"/><circle cx="494" cy="275" r="8" fill="#72c6c8"/>
+      <line x1="735" y1="347" x2="836" y2="347" stroke="#f2b856" stroke-width="11"/><circle cx="735" cy="347" r="9" fill="#9eb5ee"/><circle cx="836" cy="347" r="10" fill="#f2b856"/>
+      <line x1="502" y1="419" x2="499" y2="419" stroke="#72c6c8" stroke-width="9"/><circle cx="502" cy="419" r="8" fill="#9eb5ee"/><circle cx="499" cy="419" r="8" fill="#72c6c8"/>
+      <line x1="486" y1="491" x2="485" y2="491" stroke="#72c6c8" stroke-width="9"/><circle cx="486" cy="491" r="8" fill="#9eb5ee"/><circle cx="485" cy="491" r="8" fill="#72c6c8"/>
+    </g>
+    <g font-size="17">
+      <text x="900" y="270" fill="#d5e3e7">8.67 → 9.24%</text><text x="900" y="293" fill="#72c6c8" font-weight="700">+0.57 percentage points</text>
+      <text x="900" y="342" fill="#ffffff" font-weight="700">25.85 → 32.84%</text><text x="900" y="365" fill="#f2b856" font-weight="700">+6.99 percentage points</text>
+      <text x="900" y="414" fill="#d5e3e7">9.76 → 9.54%</text><text x="900" y="437" fill="#72c6c8" font-weight="700">−0.22 percentage points</text>
+      <text x="900" y="486" fill="#d5e3e7">8.66 → 8.58%</text><text x="900" y="509" fill="#72c6c8" font-weight="700">−0.08 percentage points</text>
+    </g>
+    <circle cx="68" cy="562" r="7" fill="#9eb5ee"/><text x="84" y="568" fill="#bdcfd4" font-size="15">September</text><circle cx="190" cy="562" r="7" fill="#72c6c8"/><text x="206" y="568" fill="#bdcfd4" font-size="15">October</text>
+    <text x="64" y="610" fill="#d4e1e5" font-size="15">October figures are provisional. Percentage-point changes compare annual rates, not monthly prices.</text>
+    <text x="64" y="638" fill="#8faab4" font-size="14">Source: Ministry of Commerce &amp; Industry, 16 Nov 2026 · IndustryWire visualization</text>
+  </g>
+</svg>

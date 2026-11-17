@@ -26,6 +26,13 @@ if (menuButton && siteNav) {
       siteNav.classList.remove('open');
     }
   });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+      menuButton.setAttribute('aria-expanded', 'false');
+      siteNav.classList.remove('open');
+      menuButton.focus();
+    }
+  });
 }
 
 const topButton = document.querySelector('.back-top');
@@ -33,7 +40,10 @@ if (topButton) {
   const updateTopButton = () => topButton.classList.toggle('visible', window.scrollY > 450);
   window.addEventListener('scroll', updateTopButton, { passive: true });
   updateTopButton();
-  topButton.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  topButton.addEventListener('click', () => {
+    const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    window.scrollTo({ top: 0, behavior });
+  });
 }
 
 const catalogue = document.querySelector('[data-catalogue]');

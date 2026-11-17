@@ -1,39 +1,29 @@
-# IndustryWire: pre-purchase handoff
+# IndustryWire: launch and domain handoff
 
-**Website code is prepared locally. No domain or hosting has been purchased, and no new public deployment has been made.** Keep the GitHub repository as the source of the site code.
+**Status:** The static newsroom foundation and a public Netlify preview are prepared. The Netlify project is connected to GitHub and the preview is deliberately noindex. No custom domain or paid hosting has been purchased. The latest article, graphics, accessibility and editorial-note changes are local and uncommitted; they are not visible on the public preview yet.
 
 ## What is ready
 
-- Newsroom-first, mobile-responsive static site, IndustryWire identity and future publishing page.
-- About, contact, corrections, editorial policy, privacy and site terms pages.
-- Kavita publisher profile, transparent organization byline, article template, sample-analysis separation, and three source-linked launch drafts in `drafts/`.
-- Search metadata, self-canonicals for the current GitHub Pages origin, regular sitemap, robots file and empty news sitemap.
-- Netlify deployment configuration (`netlify.toml`) and a build script that rewrites canonicals, structured-data URLs, robots and sitemap origins for the deploy host. Preview builds default to `noindex`; unpublished `drafts/` are excluded.
-- Local internal-link, fragment, canonical/sitemap and JSON-LD checks.
-- Custom `404.html` recovery page.
+- Mobile-responsive static newsroom website with the current IndustryWire branding and editorial/publisher information pages.
+- GitHub remains the source-code repository. Netlify builds the connected `industrywire-netlify-preview` branch at [the public preview](https://dashing-frangipane-55897f.netlify.app/).
+- `netlify.toml` and `scripts/build_site.py` support a noindex preview and a separate production build with canonicals, structured data, robots and sitemaps derived from the configured site origin.
+- Article release gate for reviewed story pages and metadata; drafts and sample articles are excluded from the public feed and sitemaps.
+- The working copy has four unpublished drafts. Three were recently revised; the WPI story has a set of three original SVG graphics. All require final human editorial review before publication. The older steel-data draft needs a fresh currency check.
+- Kavita is identified as publisher, not owner. The owner/legal entity details are still unconfirmed and must not be invented.
+- The Netlify preview URL-prefix property was verified in Google Search Console. Because the preview is noindex, no indexing request or sitemap submission was made for it.
 
-## Do these before buying a domain
+## What is not finished
 
-1. **Clear the name in India and any other target markets.** IndustryWire is still provisional. The official India public-search page currently requires CAPTCHA and an OTP login, so no registry result, owner or status could be verified in this review. Independent public-web checks surfaced an exact-name industry-news blog and a US listing for INDUSTRYWIRE in class 35 described as in use for communications/media/news/press services. These are risk indicators, not a legal conclusion or proof of Indian rights. Search IndustryWire, Industry Wire, phonetic/similar spellings and relevant services (classes 35 and 41 are starting points to discuss with a professional); review status, owner and services in the registry. Have an India trademark professional assess the results, then clear each intended foreign market before buying a matching domain. Do not send or share an OTP.
-2. **Confirm the legal publisher/operator.** India is the planned operating country. Kavita is the named publisher, not the owner. “IndustryWire” is the publication title/brand. The owner, legal person/entity structure and registered details remain unconfirmed and must be treated as separate information. The current contact email is the only confirmed public contact. Do not invent a company name or registration details.
-3. **Approve and date the launch coverage.** Re-check the three drafts against the latest official data, have the responsible human publisher/editing contact review them, and use the actual first-publication time. These drafts remain noindex and outside the archive/sitemaps until that is done.
-4. **Choose the final domain spelling and extension.** Check availability and renewal pricing only after the name is cleared. Record the regular renewal price and avoid buying extra email, privacy, or hosting bundles unless needed.
-5. **Confirm India digital-news compliance.** Because the project is intended to publish news from India, ask an India-qualified media/technology lawyer what current digital-news publisher requirements apply before public launch. The Ministry of Information and Broadcasting’s published Rule 18 information format distinguishes the publication title from the entity name and asks for entity/contact and grievance details. Its notice says information furnishing is not the same as prior registration; confirm the current process and scope for this publication rather than assuming exemption or a registration requirement.
+1. **Final local review and preview update.** Review the latest local changes and responsive article/graphic presentation. They have not been committed or pushed, so the public preview still reflects the last deployed commit.
+2. **Domain choice and availability.** Check the exact spelling and extension, registration and renewal cost, and whether the name is suitable for the intended markets before purchase. No domain has been bought. Any trademark/name clearance is separate from checking technical domain availability.
+3. **Editorial readiness.** Recheck article facts, dates and source-use rights at publication time; obtain human editorial approval; ensure the byline and publication date are real and accurate. Drafts stay out of the site feed and sitemap until approved.
+4. **Production-domain setup.** After selecting a domain, add it to the host, choose one preferred HTTPS host, update canonicals, social metadata, structured-data URLs and sitemaps, verify the final domain in Search Console and submit the regular sitemap. Remove noindex only when the site and launch information are ready. Google visibility or Google News inclusion cannot be guaranteed.
+5. **Publisher/legal launch facts.** Confirm the actual operator, owner and contact/grievance details before presenting them as facts. Kavita remains the publisher and is not the owner. Ask India-qualified counsel about applicable launch requirements when the business structure and publication plan are settled.
 
-## Hosting option researched for a zero monthly budget
+## Scope boundary: future customer dashboard
 
-GitHub remains the code repository. GitHub Pages is not the recommended production host for this planned commercial publication: GitHub's published limits say its free Pages service is not intended for running an online business or a site primarily facilitating commercial transactions.
+The current product is a static newsroom site. It does not have customer accounts, article upload, checkout, payment, subscription quotas, edit-credit enforcement or a private dashboard. A real five-article quota and one-edit-per-published-article rule need a secure backend with authentication and persistent data; static GitHub Pages/Netlify files alone cannot enforce those rules. Keep paid orders closed until that separate product and its privacy, security and terms are designed.
 
-Netlify currently advertises a Free plan at $0/month, supports commercial projects, permits custom domains with SSL, and provides 300 monthly usage credits. The plan has a hard limit; if usage reaches it, sites pause until the next billing cycle. The plan may change, and its agreement reserves provider discretion over Free-tier projects, so re-check the current terms when launching. A custom domain itself still has an annual registration/renewal cost. Start on a temporary `netlify.app` address for a no-cost smoke review before buying a domain. The deployment configuration is prepared, but no Netlify account has been connected and no deployment has been made.
+## Hosting and budget
 
-Sources: [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits); [Netlify Free plan and commercial projects](https://www.netlify.com/blog/introducing-netlify-free-plan/); [Netlify current pricing and limits](https://www.netlify.com/pricing/); [Netlify domain setup](https://docs.netlify.com/domains-https/custom-domains/); [MIB digital media rules and guidance](https://mib.gov.in/en/ministry/our-wings/digital-media); [MIB digital-news publisher information format](https://mib.gov.in/sites/default/files/2025-06/furnishing-of-informaiton-30.05.2025_0.pdf).
-
-## After the name and domain are settled
-
-- Create a Netlify account and connect it to this GitHub repository. Keep all code commits in GitHub; Netlify will use `netlify.toml` to build a clean `dist/` preview from the static source.
-- Deploy first to the temporary preview address and inspect pages, responsive layout, contact links, `404.html`, sitemaps and robots file.
-- Add the cleared custom domain, update canonical/OG/structured-data URLs and sitemap/robots references throughout the HTML/XML, then enforce one HTTPS host and one preferred `www` or apex version.
-- After the final domain is chosen, add a Search Console property, verify ownership using its provided DNS record or HTML meta token, submit `sitemap.xml`, inspect key URLs, and track indexing and queries. No Search Console property for a final domain is verified yet. Add current news entries to `news-sitemap.xml` only when eligible, original articles go live.
-- Keep paid publishing, customer accounts, uploads and payments closed until the future service workflow, privacy/security controls and reviewed terms are implemented.
-
-**Purchase point:** after steps 1–5 above. At that point, the likely cost is the domain registration only; Netlify hosting may remain $0/month if the site stays within Free-plan limits. Do not buy until the brand check is satisfactory.
+The temporary Netlify preview is public but noindex. The repository is still the source of code, and GitHub Pages remains unchanged. No monthly hosting fee or domain purchase has been made in this work. Recheck Netlify's current free-tier limits and terms before relying on it for a commercial launch; the domain will have its own registration and renewal cost.

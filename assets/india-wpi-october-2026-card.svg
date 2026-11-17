@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">One inflation report, two different signals</title>
+  <desc id="desc">India's October 2026 wholesale inflation rate rose 0.90 percentage points from September to 12.29 percent year on year. Fuel and Power inflation rose 6.99 points to 32.84 percent, while Manufactured Products inflation eased 0.22 points to 9.54 percent. October figures are provisional. The next release is scheduled for 14 December.</desc>
+  <rect width="1200" height="675" fill="#102333"/>
+  <circle cx="1095" cy="42" r="184" fill="#176b87" opacity=".24"/>
+  <circle cx="1095" cy="42" r="137" fill="none" stroke="#52b4bd" stroke-opacity=".2" stroke-width="2"/>
+  <g font-family="Arial,sans-serif">
+    <rect x="64" y="49" width="8" height="72" rx="4" fill="#52b4bd"/>
+    <text x="94" y="75" fill="#b7dce1" font-size="17" font-weight="700" letter-spacing="2.7">INDUSTRYWIRE  /  INDIA ECONOMY</text>
+    <text x="94" y="132" fill="#ffffff" font-size="42" font-weight="700">One inflation report.</text>
+    <text x="94" y="181" fill="#ffffff" font-size="42" font-weight="700">Two different signals.</text>
+    <text x="95" y="216" fill="#bad0d6" font-size="19">October wholesale prices · annual inflation rates</text>
+
+    <path d="M106 279H1080" stroke="#46707f" stroke-width="4" stroke-linecap="round"/>
+    <path d="M426 279h40m0 0-12-10m12 10-12 10M760 279h40m0 0-12-10m12 10-12 10" fill="none" stroke="#72c6c8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g>
+      <circle cx="106" cy="279" r="35" fill="#1e5365" stroke="#72c6c8" stroke-width="3"/>
+      <path d="M106 255c-3 10-14 17-14 27a14 14 0 0 0 28 0c0-10-11-17-14-27Z" fill="#72c6c8"/>
+      <path d="M106 273c-2 5-7 8-7 13a7 7 0 0 0 14 0c0-5-5-8-7-13Z" fill="#fff" opacity=".88"/>
+      <circle cx="480" cy="279" r="35" fill="#1e5365" stroke="#72c6c8" stroke-width="3"/>
+      <path d="m486 254-18 27h14l-4 23 20-30h-14l2-20Z" fill="#f5be62" stroke="#ffe1a1" stroke-width="1.5" stroke-linejoin="round"/>
+      <circle cx="814" cy="279" r="35" fill="#1e5365" stroke="#72c6c8" stroke-width="3"/>
+      <path d="M795 293v-18l11 7v-12l12 8v-15h12v30h-35Z" fill="none" stroke="#d4e5e8" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M823 263v-9h7v9M802 282h4m5 0h4m5 0h4m-22 7h4m5 0h4m5 0h4" stroke="#72c6c8" stroke-width="2"/>
+    </g>
+
+    <g>
+      <text x="64" y="345" fill="#a9c7d0" font-size="16" font-weight="700" letter-spacing="1">THE HEADLINE</text>
+      <text x="64" y="395" fill="#ffffff" font-size="34" font-weight="700">12.29%</text>
+      <text x="64" y="424" fill="#9ed1d3" font-size="19" font-weight="700">↑ 0.90 percentage points</text>
+      <text x="64" y="454" fill="#bdcfd4" font-size="17">from September’s 11.39%</text>
+
+      <text x="446" y="345" fill="#a9c7d0" font-size="16" font-weight="700" letter-spacing="1">ENERGY PRICES</text>
+      <text x="446" y="395" fill="#ffffff" font-size="34" font-weight="700">32.84%</text>
+      <text x="446" y="424" fill="#f5c875" font-size="19" font-weight="700">↑ 6.99 percentage points</text>
+      <text x="446" y="454" fill="#bdcfd4" font-size="17">Fuel &amp; Power · from 25.85%</text>
+
+      <text x="780" y="345" fill="#a9c7d0" font-size="16" font-weight="700" letter-spacing="1">FACTORY GOODS</text>
+      <text x="780" y="395" fill="#ffffff" font-size="34" font-weight="700">9.54%</text>
+      <text x="780" y="424" fill="#9ed1d3" font-size="19" font-weight="700">↓ 0.22 percentage points</text>
+      <text x="780" y="454" fill="#bdcfd4" font-size="17">Manufactured Products · from 9.76%</text>
+    </g>
+
+    <rect x="64" y="495" width="1072" height="65" rx="10" fill="#183b4d" stroke="#31586a" stroke-width="1.5"/>
+    <text x="88" y="523" fill="#83c9cb" font-size="15" font-weight="700" letter-spacing="1.4">WHAT TO WATCH</text>
+    <text x="88" y="547" fill="#ffffff" font-size="18">November WPI release scheduled for 14 December</text>
+    <text x="64" y="596" fill="#d4e1e5" font-size="15">October data are provisional. Changes show movement in year-on-year rates, not monthly price changes.</text>
+    <text x="64" y="625" fill="#8faab4" font-size="14">Source: Ministry of Commerce &amp; Industry, 16 Nov 2026 · IndustryWire visual based on the official release</text>
+    <text x="1136" y="625" text-anchor="end" fill="#8faab4" font-size="14">industrywire</text>
+  </g>
+</svg>
