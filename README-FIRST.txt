@@ -52,12 +52,13 @@ RESEARCH CATALOGUE
 The listings on research.html are proposed scopes only, not completed reports or findings. Before accepting research work, agree the question, sources, geography, deliverables, timing, capability and commercial terms directly with the client. No subscription or checkout is active.
 
 PRIVACY AND DATA
-The site currently has no newsletter collection, analytics, user accounts, hosted form or payment system. Email enquiries are sent only if a visitor chooses to send the prepared draft from their own mail app. Review privacy.html and all hosting-provider terms before adding a form, analytics, newsletter, payment, file upload or account feature.
+The site currently has no newsletter collection, active analytics IDs, user accounts, hosted form or payment system. Email enquiries are sent only if a visitor chooses to send the prepared draft from their own mail app. The build supports optional Google Analytics and Microsoft Clarity IDs, but loads those tags only after visitor consent. Set `GA_MEASUREMENT_ID` and/or `CLARITY_PROJECT_ID` in Netlify only after the relevant account setup is complete. Review privacy.html and all provider terms before enabling measurement.
 
 TECHNICAL FILES
 - style.css — visual system and responsive layouts
 - site.js — navigation, catalogue filtering, search, email draft and share controls
 - site-config.js — public contact email
+- privacy-consent.js — optional analytics consent controls and tag loading
 - robots.txt — crawl access and sitemap locations
 - sitemap.xml — current public page URLs; update after final host and domain choice
 - news-sitemap.xml — intentionally empty until real news coverage exists

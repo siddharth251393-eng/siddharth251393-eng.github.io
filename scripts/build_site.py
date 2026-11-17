@@ -261,6 +261,12 @@ def main() -> None:
     origin = site_origin()
     publishable = os.environ.get("PUBLIC_INDEXING", "false").strip().lower() == "true"
     verification = os.environ.get("GSC_VERIFICATION", "").strip()
+    ga_measurement_id = os.environ.get("GA_MEASUREMENT_ID", "").strip()
+    clarity_project_id = os.environ.get("CLARITY_PROJECT_ID", "").strip()
+    if ga_measurement_id and not re.fullmatch(r"G-[A-Z0-9]+", ga_measurement_id):
+        raise SystemExit("GA_MEASUREMENT_ID must be a Google Analytics G- measurement ID.")
+    if clarity_project_id and not re.fullmatch(r"[A-Za-z0-9_-]+", clarity_project_id):
+        raise SystemExit("CLARITY_PROJECT_ID contains unsupported characters.")
     published_articles = read_published_articles(publishable)
 
     if DIST.exists():
@@ -346,6 +352,7 @@ def main() -> None:
         "style.css",
         "site.js",
         "site-config.js",
+        "privacy-consent.js",
         "favicon.svg",
         "social-card.svg",
         "robots.txt",
@@ -405,6 +412,14 @@ def main() -> None:
                     )
                 else:
                     text = text.replace("</head>", f"{robots_meta}</head>", 1)
+            if ga_measurement_id or clarity_project_id:
+                attrs = []
+                if ga_measurement_id:
+                    attrs.append(f'data-ga-measurement-id="{html.escape(ga_measurement_id, quote=True)}"')
+                if clarity_project_id:
+                    attrs.append(f'data-clarity-project-id="{html.escape(clarity_project_id, quote=True)}"')
+                consent_script = '<script defer src="/privacy-consent.js" ' + " ".join(attrs) + "></script>"
+                text = text.replace("</head>", consent_script + "</head>", 1)
         target.write_text(text, encoding="utf-8")
 
     if publishable and published_articles:

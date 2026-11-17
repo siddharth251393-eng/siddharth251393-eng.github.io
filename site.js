@@ -110,6 +110,12 @@ if (contactForm) {
       '',
       String(values.get('message') || '')
     ].join('\n');
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'contact_draft_opened', {
+        enquiry_type: String(values.get('type') || 'General enquiry'),
+        transport_type: 'beacon'
+      });
+    }
     window.location.href = `mailto:${INDUSTRYWIRE_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     const status = document.querySelector('[data-form-status]');
     if (status) status.textContent = 'Your email app should open with a draft. Review it and choose Send there; the website does not send or store this form.';
