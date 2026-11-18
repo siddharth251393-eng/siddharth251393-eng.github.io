@@ -5,7 +5,7 @@
 [build.environment]
   # Deploy previews stay noindex. Production is explicitly enabled below.
   PUBLIC_INDEXING = "false"
-  GSC_VERIFICATION = "O7PfE0VaxtLzptpo7o7Wv3NuoD74TdA9DQXwD0odzW8"
+  GSC_VERIFICATION = "koT_gD3gZGj46unVdvPKvEpG-xzsSRtiJCWK4tKOZW4"
   # Add GA_MEASUREMENT_ID and/or CLARITY_PROJECT_ID in Netlify only after the projects are created.
   # The build loads optional tracking tags behind the visitor consent panel.
 
