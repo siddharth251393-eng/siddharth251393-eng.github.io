@@ -3,8 +3,13 @@
   publish = "dist"
 
 [build.environment]
-  # Keep the temporary host and deploy previews noindex until final launch checks.
+  # Deploy previews stay noindex. Production is explicitly enabled below.
   PUBLIC_INDEXING = "false"
   GSC_VERIFICATION = "O7PfE0VaxtLzptpo7o7Wv3NuoD74TdA9DQXwD0odzW8"
   # Add GA_MEASUREMENT_ID and/or CLARITY_PROJECT_ID in Netlify only after the projects are created.
   # The build loads optional tracking tags behind the visitor consent panel.
+
+[context.production.environment]
+  # The approved, sourced WPI analysis is ready for publication on the free Netlify address.
+  # Update the canonical origin and Search Console property when a custom domain is purchased.
+  PUBLIC_INDEXING = "true"
