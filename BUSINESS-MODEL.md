@@ -1,13 +1,13 @@
-# IndustryWire business model — working draft
+# The Sector Journal business model — working draft
 
-**Status:** audience-building phase. IndustryWire is not accepting paid publishing orders or subscriptions now; monetisation is a long-term possibility after original coverage and reader demand are established.
+**Status:** audience-building phase. The Sector Journal is not accepting paid publishing orders or subscriptions now; monetisation is a long-term possibility after original coverage and reader demand are established.
 **Working tagline:** “Business announcements and industry insight, clearly published.”
 **Positioning:** an independent industry newsroom first, with a possible future B2B publishing service for industry announcements and market research report summaries kept clearly separate.
 **Market perspective:** international business and industry coverage, developed with an India and Asia perspective.
 
-**Planned operating country:** India. **Named publisher:** Kavita (not the firm’s owner). “IndustryWire” is the publication brand; the owner, legal publisher/operator structure and registered details remain to be confirmed separately.
+**Planned operating country:** India. **Named publisher:** Kavita (not the firm’s owner). “The Sector Journal” is the publication brand; the owner, legal publisher/operator structure and registered details remain to be confirmed separately.
 
-This model takes inspiration from the public structure of [Industry Today](https://industrytoday.co.uk/about-us): paid publishing for business communications and market research publishers, with packages and external distribution channels. IndustryWire should build the service in stages and make claims only for capabilities it has actually established.
+This model takes inspiration from the public structure of [Industry Today](https://industrytoday.co.uk/about-us): paid publishing for business communications and market research publishers, with packages and external distribution channels. The Sector Journal should build the service in stages and make claims only for capabilities it has actually established.
 
 ## 1. Customer and problem
 
@@ -23,7 +23,7 @@ Help these teams present relevant business content in a format that is easy for 
 
 ### Initial value proposition
 
-IndustryWire offers a reviewed, clearly labelled place to publish selected company announcements and report summaries. Clients receive an agreed page on IndustryWire and an editorial review for fit, completeness, links, rights and clarity. This is publication on IndustryWire only; it does not include external syndication, audience delivery or performance results.
+The Sector Journal offers a reviewed, clearly labelled place to publish selected company announcements and report summaries. Clients receive an agreed page on The Sector Journal and an editorial review for fit, completeness, links, rights and clarity. This is publication on The Sector Journal only; it does not include external syndication, audience delivery or performance results.
 
 The service should compete on careful sector categorisation, transparent commercial labels, responsive manual service and a visible separation from independent reporting. Those are intended standards, not established performance claims.
 
@@ -34,7 +34,7 @@ The service should compete on careful sector categorisation, transparent commerc
 - One-off, quote-based fee for an accepted company announcement or report summary.
 - Scope agreed before work: content type, length or format, permitted edits, links/media, rights, publication term, fee, schedule and any update/removal process.
 - Payment process and invoice details must be agreed in writing before accepting paid work; the website does not currently take payment.
-- Do not accept all submissions automatically. IndustryWire may decline unsuitable, unsupported, unlawful, misleading, rights-unclear or out-of-scope material under the eventual written terms.
+- Do not accept all submissions automatically. The Sector Journal may decline unsuitable, unsupported, unlawful, misleading, rights-unclear or out-of-scope material under the eventual written terms.
 
 ### Later offer: volume packages
 
@@ -42,7 +42,7 @@ Consider a prepaid bundle or subscription only after repeat demand is demonstrat
 
 If a subscription is introduced, each customer must have their own secure account and dashboard for preparing and submitting content. The dashboard must show the articles purchased, submitted/uploaded, published and remaining in the plan, along with each submission's status (for example, draft, submitted, in review, changes requested, accepted or declined, and published). Enforce the purchased article allowance automatically: for a five-article plan, the customer may not submit or publish a sixth article until the plan is renewed or additional credits are purchased. Show the limit and renewal/top-up option clearly when the allowance is used. Customers must only be able to access their own organisation's material. Define when an article credit is counted or returned (including declined or withdrawn items), and set authentication, permissions, data retention, billing and support rules before building.
 
-After an article is published, allow the customer one post-publication edit request for that article. The edit is tied to that specific article and cannot be transferred or pooled: a five-article plan gives one edit for each of its five published articles, not five edits that can all be used on one article. Track the allowance separately on every article and disable further customer edit requests on that article once used. This limit does not prevent IndustryWire from correcting factual errors, making necessary legal changes or updating a disclosure; those editorial actions are handled separately. Define the permitted scope and review process for the one edit before launch. These dashboard and quota features are future product requirements, not current features.
+After an article is published, allow the customer one post-publication edit request for that article. The edit is tied to that specific article and cannot be transferred or pooled: a five-article plan gives one edit for each of its five published articles, not five edits that can all be used on one article. Track the allowance separately on every article and disable further customer edit requests on that article once used. This limit does not prevent The Sector Journal from correcting factual errors, making necessary legal changes or updating a disclosure; those editorial actions are handled separately. Define the permitted scope and review process for the one edit before launch. These dashboard and quota features are future product requirements, not current features.
 
 ### Later offer: distribution and directory products
 
@@ -50,12 +50,12 @@ External syndication, an industry directory, branded client newsrooms, email dis
 
 ### Possible custom work
 
-Editing, writing, research or bespoke packages may be scoped separately if IndustryWire has the capacity and expertise. The initial site should not imply these are active services or claim completed research.
+Editing, writing, research or bespoke packages may be scoped separately if The Sector Journal has the capacity and expertise. The initial site should not imply these are active services or claim completed research.
 
 ## 3. Sales and delivery workflow
 
 1. **Lead:** a prospective client submits an email enquiry with organisation, role, content type, sector, market and desired timing.
-2. **Screen:** IndustryWire checks fit, public-interest and quality concerns, source material, publication rights, conflicts and ability to deliver.
+2. **Screen:** The Sector Journal checks fit, public-interest and quality concerns, source material, publication rights, conflicts and ability to deliver.
 3. **Proposal:** if suitable, send a written scope, label, fee, schedule, client responsibilities and terms. No acceptance or work begins from the enquiry alone.
 4. **Content and proof:** receive approved copy and source/rights details through a secure, agreed channel; prepare a proof; client checks factual particulars and permissions.
 5. **Publish and invoice:** after approval and satisfaction of the agreed payment terms, publish with a visible commercial label and disclose the publisher/client as agreed.
@@ -63,11 +63,11 @@ Editing, writing, research or bespoke packages may be scoped separately if Indus
 
 At the current development stage, enquiries are handled manually through an email draft. There is no account, file upload, automated workflow, online payment or client dashboard. Do not ask customers to send confidential material or attachments in the first enquiry.
 
-## 3A. Distribution benchmark and IndustryWire boundary
+## 3A. Distribution benchmark and The Sector Journal boundary
 
-Industry Today's current public pages describe distribution through its own industry-specific sections and customer newsrooms, publishing partners, RSS, email and social media. Its pricing page also displays NewsNow, Bing, Google News and Yahoo logos as examples of platforms. Its terms separately state that it does not warrant placement in a particular publication or third-party use/pickup, and that removal from its own network cannot guarantee removal from outside sites. These are Industry Today's representations and terms, not IndustryWire capabilities or promises. The pricing page and sign-up page also describe different credit validity periods, so IndustryWire should publish one unambiguous rule for each plan.
+Industry Today's current public pages describe distribution through its own industry-specific sections and customer newsrooms, publishing partners, RSS, email and social media. Its pricing page also displays NewsNow, Bing, Google News and Yahoo logos as examples of platforms. Its terms separately state that it does not warrant placement in a particular publication or third-party use/pickup, and that removal from its own network cannot guarantee removal from outside sites. These are Industry Today's representations and terms, not The Sector Journal capabilities or promises. The pricing page and sign-up page also describe different credit validity periods, so The Sector Journal should publish one unambiguous rule for each plan.
 
-For IndustryWire, the base deliverable should initially be a reviewed, clearly labelled page on IndustryWire only. RSS, newsletters, social posting, partner syndication, industry microsites, directory profiles and named third-party platform placement are not included unless each channel is operational, rights-cleared, and expressly listed in a future written offer. Do not say a story will be carried by Google News, Bing News, Yahoo or another third party: visibility is controlled by that platform and cannot be guaranteed. Where an external partner is later contracted, describe the specific route accurately and state what is and is not guaranteed.
+For The Sector Journal, the base deliverable should initially be a reviewed, clearly labelled page on The Sector Journal only. RSS, newsletters, social posting, partner syndication, industry microsites, directory profiles and named third-party platform placement are not included unless each channel is operational, rights-cleared, and expressly listed in a future written offer. Do not say a story will be carried by Google News, Bing News, Yahoo or another third party: visibility is controlled by that platform and cannot be guaranteed. Where an external partner is later contracted, describe the specific route accurately and state what is and is not guaranteed.
 
 An internal working draft of proposed customer service terms is in [PUBLISHING-TERMS-DRAFT.md](PUBLISHING-TERMS-DRAFT.md). It is a product and policy draft, not launch-ready legal advice or a binding contract.
 
@@ -80,7 +80,7 @@ An internal working draft of proposed customer service terms is in [PUBLISHING-T
 - Separate client-supplied claims from independently verified facts. Attribute claims to the client or source unless independently checked.
 - Mark paid links to client destinations with Google's preferred `rel="sponsored"` qualification.
 - Require confirmation that the client is authorised to submit text, data, trademarks and images. Set rights and indemnity terms in reviewed service terms before accepting paid work.
-- Create a correction, update and removal process for client pages, and distinguish client-requested edits from corrections to IndustryWire reporting.
+- Create a correction, update and removal process for client pages, and distinguish client-requested edits from corrections to The Sector Journal reporting.
 
 ## 5. Pricing approach
 
@@ -110,7 +110,7 @@ Do not buy email lists, imply partner relationships, or claim audience reach wit
 - What is the actual time and cost to review, prepare, publish and support one item?
 - What price do customers accept for the deliverable actually provided?
 - Do customers return or refer others, and what causes declines or complaints?
-- Does any distribution channel create measurable value beyond the IndustryWire page itself?
+- Does any distribution channel create measurable value beyond the Sector Journal page itself?
 
 Track qualified enquiries, proposals, accepted jobs, revenue, fulfilment hours, direct costs, repeat requests, corrections and complaints. Avoid vanity metrics until there is real data.
 
@@ -122,17 +122,17 @@ Organic visibility on Google, Bing, Google News and other industry discovery cha
 
 Build visibility through a distinct, useful independent newsroom: original reporting, clear sourcing, named responsibility, accurate dates, corrections, and transparent publisher information. Keep paid client material visibly labelled and editorially separate. Paid links to clients must be qualified with `rel="sponsored"` or `rel="nofollow"`; do not sell ranking credit or publish low-value material mainly to borrow the site's search signals.
 
-Start with manually scoped, one-off work while measuring actual customer demand and the service's own audience. Consider subscriptions only after IndustryWire can show prospective clients current evidence of value, such as dated Search Console impressions/clicks for relevant queries, referral and engagement data, confirmed partner placements with URLs, and repeat customer demand. A subscription should sell a defined number of submissions, the dashboard/workflow and only the distribution channels that are actually included—not assumed search visibility. Report measured results with a date range and source, and make clear that past results do not guarantee future results.
+Start with manually scoped, one-off work while measuring actual customer demand and the service's own audience. Consider subscriptions only after The Sector Journal can show prospective clients current evidence of value, such as dated Search Console impressions/clicks for relevant queries, referral and engagement data, confirmed partner placements with URLs, and repeat customer demand. A subscription should sell a defined number of submissions, the dashboard/workflow and only the distribution channels that are actually included—not assumed search visibility. Report measured results with a date range and source, and make clear that past results do not guarantee future results.
 
 ### Independent newsroom content plan
 
 To earn repeat readership and timely search discovery, build a steady newsroom habit around relevant developments in manufacturing, energy, healthcare, technology and business, with an India and Asia perspective and international context. Use emerging or trending topics as a signal for what readers may need explained, not as a reason to repeat another outlet's story. Each article should add original reporting, a useful explanation, primary-source context, or a clear industry-specific analysis.
 
-For each candidate story, record why it matters now, the affected sector and audience, the primary documents or responsible sources checked, what IndustryWire adds, who is accountable for the article, and any unresolved uncertainty. Publish only after a human editor has checked names, figures, dates, attribution, permissions and links. Clearly distinguish confirmed facts, company claims, forecasts and analysis. Do not manufacture urgency, copy headlines or text, publish unverified social claims, or mass-produce thin variations of one story. Sponsored submissions must not set newsroom priorities or appear as independent trend coverage.
+For each candidate story, record why it matters now, the affected sector and audience, the primary documents or responsible sources checked, what The Sector Journal adds, who is accountable for the article, and any unresolved uncertainty. Publish only after a human editor has checked names, figures, dates, attribution, permissions and links. Clearly distinguish confirmed facts, company claims, forecasts and analysis. Do not manufacture urgency, copy headlines or text, publish unverified social claims, or mass-produce thin variations of one story. Sponsored submissions must not set newsroom priorities or appear as independent trend coverage.
 
 ### Authorship and contributor profiles
 
-IndustryWire currently has no reporting team. Do not invent author identities, headshots, biographies, industry experience, qualifications or expert endorsements. Use a named byline only for the real person who wrote or materially reported the article and who agrees to be credited; describe that person's experience accurately. A contributor may be associated with industries only where their actual work or expertise supports it. For desk-produced material without a suitable individual byline, use a transparent “IndustryWire Editorial Desk” organization byline and explain on its profile that it is a publication byline, not a named journalist or a claim of multiple staff. Create individual author profile pages only for real, participating contributors; connect each byline to its matching profile and keep the visible page and structured data consistent. Disclose relevant conflicts and commercial relationships.
+The Sector Journal currently has no reporting team. Do not invent author identities, headshots, biographies, industry experience, qualifications or expert endorsements. Use a named byline only for the real person who wrote or materially reported the article and who agrees to be credited; describe that person's experience accurately. A contributor may be associated with industries only where their actual work or expertise supports it. For desk-produced material without a suitable individual byline, use a transparent “The Sector Journal Editorial Desk” organization byline and explain on its profile that it is a publication byline, not a named journalist or a claim of multiple staff. Create individual author profile pages only for real, participating contributors; connect each byline to its matching profile and keep the visible page and structured data consistent. Disclose relevant conflicts and commercial relationships.
 
 Track which topics earn relevant impressions, clicks, engaged reading and reader enquiries, then use that evidence to refine coverage. Set the publishing cadence only after the editorial capacity and verification workflow are known; consistency and accuracy matter more than an unsustainable volume target.
 
@@ -147,7 +147,7 @@ Track which topics earn relevant impressions, clicks, engaged reading and reader
 ### Off-page visibility plan
 
 - Earn attention through original reporting, useful explainers, interviews, and transparent original data that relevant industry professionals have a reason to cite.
-- Share published reporting through authentic IndustryWire social profiles and relevant professional communities. Build relationships with credible industry associations, researchers, companies, and subject experts; request editorial consideration only when the material is genuinely relevant.
+- Share published reporting through authentic The Sector Journal social profiles and relevant professional communities. Build relationships with credible industry associations, researchers, companies, and subject experts; request editorial consideration only when the material is genuinely relevant.
 - Seek real partner distribution only through written agreements and describe the exact channel. Track referrals and preserve evidence of actual placements before including them in a paid offer.
 - Do not buy backlinks, exchange links at scale, use automated link services, require followed links from clients, or promise ranking outcomes. Mark commercial outbound links with `rel="sponsored"` (or `nofollow`) and make sponsored material clear to readers.
 
@@ -172,7 +172,7 @@ Use Google Search Console to review indexing, relevant query impressions, clicks
 
 The code and current project history stay in GitHub. Development can continue locally without purchasing a domain or host. The current live site should remain unchanged until the commercial site is complete and the final host is selected.
 
-**Brand clearance is still open.** A preliminary web search found an earlier exact `INDUSTRYWIRE` trademark registration associated with press-release distribution, plus other current uses of similar names. This does not establish the current legal status or decide whether IndustryWire can be used in any particular market. Keep the name provisional and do not buy a domain, file a mark or launch under it until the relevant registers and marketplace uses have been checked in the intended territories. If there is a conflict, choose a more distinctive name before launch.
+**Brand clearance is still open.** Preliminary research on the former working name IndustryWire found a potentially relevant earlier exact trademark registration associated with press-release distribution. That search did not assess The Sector Journal. Check the new name in relevant trademark registers and marketplace use in intended territories before investing in a domain or filing a mark; domain availability alone is not clearance.
 
 GitHub states that Pages is not intended or allowed as free hosting for an online business or a site primarily directed at facilitating commercial transactions. See [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits). Before launching this commercial version, select a host whose terms permit the use, then update the canonical URLs, structured data, sitemap, robots file and privacy notice for that host. Review its actual terms and free-tier limits at launch time.
 
@@ -189,4 +189,4 @@ Do not accept a paid order until the following are ready:
 
 ## Reference
 
-Industry Today's public pages describe paid press-release and market-research publishing, package pricing, directory features and a claimed network of external channels. Those are its stated capabilities, not IndustryWire's: [About](https://industrytoday.co.uk/about-us), [Pricing](https://industrytoday.co.uk/pricing), [PR publishing](https://industrytoday.co.uk/pr-content-publishing), [Market research](https://industrytoday.co.uk/market-research).
+Industry Today's public pages describe paid press-release and market-research publishing, package pricing, directory features and a claimed network of external channels. Those are its stated capabilities, not The Sector Journal's: [About](https://industrytoday.co.uk/about-us), [Pricing](https://industrytoday.co.uk/pricing), [PR publishing](https://industrytoday.co.uk/pr-content-publishing), [Market research](https://industrytoday.co.uk/market-research).

@@ -169,7 +169,7 @@ def inject_article_metadata(destination: Path, article: dict[str, str], origin: 
         },
         "publisher": {
             "@type": "Organization",
-            "name": "IndustryWire",
+            "name": "The Sector Journal",
             "url": origin + "/",
         },
         "mainEntityOfPage": {"@type": "WebPage", "@id": origin + article["url"]},
@@ -186,7 +186,7 @@ def inject_article_metadata(destination: Path, article: dict[str, str], origin: 
     )
     for name, content in {
         "og:type": "article",
-        "og:site_name": "IndustryWire",
+        "og:site_name": "The Sector Journal",
         "og:title": article["title"],
         "og:description": article["summary"],
         "og:url": origin + article["url"],
@@ -210,7 +210,7 @@ def inject_article_metadata(destination: Path, article: dict[str, str], origin: 
         )
     text = text.replace(
         "</head>",
-        '<script type="application/ld+json" data-industrywire-generated>'
+        '<script type="application/ld+json" data-sector-journal-generated>'
         + json.dumps(schema, ensure_ascii=False, separators=(",", ":"))
         + "</script></head>",
         1,
@@ -249,7 +249,7 @@ def write_article_sitemaps(articles: list[dict[str, str]], origin: str) -> None:
         ET.SubElement(item, f"{{{namespace}}}loc").text = origin + article["url"]
         news = ET.SubElement(item, f"{{{news_namespace}}}news")
         publication = ET.SubElement(news, f"{{{news_namespace}}}publication")
-        ET.SubElement(publication, f"{{{news_namespace}}}name").text = "IndustryWire"
+        ET.SubElement(publication, f"{{{news_namespace}}}name").text = "The Sector Journal"
         ET.SubElement(publication, f"{{{news_namespace}}}language").text = "en"
         ET.SubElement(news, f"{{{news_namespace}}}publication_date").text = article["datePublished"]
         ET.SubElement(news, f"{{{news_namespace}}}title").text = article["title"]
@@ -266,7 +266,7 @@ def write_rss_feed(articles: list[dict[str, str]], origin: str) -> None:
     ET.register_namespace("dc", dc_namespace)
     root = ET.Element("rss", {"version": "2.0"})
     channel = ET.SubElement(root, "channel")
-    ET.SubElement(channel, "title").text = "IndustryWire"
+    ET.SubElement(channel, "title").text = "The Sector Journal"
     ET.SubElement(channel, "link").text = origin + "/"
     ET.SubElement(channel, "description").text = (
         "Independent, sourced reporting on business and industry."
@@ -336,7 +336,7 @@ def main() -> None:
         # article on the temporary host.
         if source.name == "index.html" and not publishable:
             preview_panel = (
-                '<div class="newsroom-panel"><div class="newsroom-mark" aria-hidden="true">IW</div>'
+                '<div class="newsroom-panel"><div class="newsroom-mark" aria-hidden="true">SJ</div>'
                 '<div><p class="eyebrow">NOINDEX PREVIEW</p>'
                 '<h3>Newsroom coverage is being prepared</h3>'
                 '<p>The temporary preview does not expose article pages while public indexing is disabled.</p>'
@@ -479,7 +479,7 @@ def main() -> None:
                 text = text.replace("</head>", f"{canonical}</head>", 1)
                 feed_link = (
                     f'<link rel="alternate" type="application/rss+xml" '
-                    f'title="IndustryWire RSS feed" href="{origin}/rss.xml">'
+                    f'title="The Sector Journal RSS feed" href="{origin}/rss.xml">'
                 )
                 text = re.sub(
                     r'\s*<link\s+rel=["\']alternate["\'][^>]*type=["\']application/rss\+xml["\'][^>]*>',

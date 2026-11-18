@@ -5,7 +5,7 @@
   const clarityId = loader?.dataset.clarityProjectId || '';
   if (!gaId && !clarityId) return;
 
-  const storageKey = 'industrywire-optional-analytics-consent-v1';
+  const storageKey = 'sectorjournal-optional-analytics-consent-v1';
   const readChoice = () => {
     try {
       const value = localStorage.getItem(storageKey);
@@ -41,8 +41,8 @@
   };
 
   const loadClarity = () => {
-    if (!clarityId || window.__industrywireClarityLoaded) return;
-    window.__industrywireClarityLoaded = true;
+    if (!clarityId || window.__sectorjournalClarityLoaded) return;
+    window.__sectorjournalClarityLoaded = true;
     window.clarity = window.clarity || function clarityQueue(...args) {
       (window.clarity.q = window.clarity.q || []).push(args);
     };
@@ -55,8 +55,8 @@
   };
 
   const loadGoogleAnalytics = () => {
-    if (!gaId || window.__industrywireGoogleAnalyticsLoaded) return;
-    window.__industrywireGoogleAnalyticsLoaded = true;
+    if (!gaId || window.__sectorjournalGoogleAnalyticsLoaded) return;
+    window.__sectorjournalGoogleAnalyticsLoaded = true;
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function gtagQueue() { window.dataLayer.push(arguments); };
     window.gtag('consent', 'default', {
@@ -81,7 +81,7 @@
   };
 
   const stopOptionalAnalytics = () => {
-    if (window.__industrywireGoogleAnalyticsLoaded && typeof window.gtag === 'function') {
+    if (window.__sectorjournalGoogleAnalyticsLoaded && typeof window.gtag === 'function') {
       window.gtag('consent', 'update', {
         analytics_storage: 'denied',
         ad_storage: 'denied',
@@ -123,7 +123,7 @@
     panel.innerHTML = `
       <div class="privacy-consent-inner">
         <div class="privacy-consent-copy">
-          <h2>Help improve IndustryWire</h2>
+          <h2>Help improve The Sector Journal</h2>
           <p>With your permission, Google Analytics and Microsoft Clarity measure page visits and site interactions so we can improve the site. They may process device, browser, referral, page-view, click and scroll information. Form text and email-draft contents are not sent as analytics events. <a href="/privacy.html">Read the privacy notice</a>.</p>
         </div>
         <div class="privacy-consent-actions">

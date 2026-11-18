@@ -1,10 +1,10 @@
-# IndustryWire: launch and domain handoff
+# The Sector Journal: launch and domain handoff
 
 **Status:** The static newsroom foundation and a public Netlify preview are prepared. The Netlify project is connected to GitHub and the preview is deliberately noindex. No custom domain or paid hosting has been purchased. The latest article, graphics, accessibility and editorial-note changes are committed and deployed to the preview; articles remain unpublished until editorial review.
 
 ## What is ready
 
-- Mobile-responsive static newsroom website with the current IndustryWire branding and editorial/publisher information pages.
+- Mobile-responsive static newsroom website with the current The Sector Journal branding and editorial/publisher information pages.
 - GitHub remains the source-code repository. Netlify builds the connected `industrywire-netlify-preview` branch at [the public preview](https://dashing-frangipane-55897f.netlify.app/).
 - `netlify.toml` and `scripts/build_site.py` support a noindex preview and a separate production build with canonicals, structured data, robots and sitemaps derived from the configured site origin.
 - Article release gate for reviewed story pages and metadata; drafts and sample articles are excluded from the public feed and sitemaps.
@@ -12,7 +12,7 @@
 - Kavita is identified as publisher, not owner. The owner/legal entity details are still unconfirmed and must not be invented.
 - The Netlify preview URL-prefix property was verified in Google Search Console. Because the preview is noindex, no indexing request or sitemap submission was made for it.
 - The preview has a consent panel for optional Google Analytics 4 and Microsoft Clarity. Both project IDs are configured in Netlify and the successful rebuild is live. Tags load only after a visitor opts in; the page was verified to show no external analytics tags before consent. No opted-in data collection has yet been verified.
-- The Clarity project is named “IndustryWire Preview” and uses the “Other” industry category. Its project ID and the GA4 measurement ID are stored in Netlify environment variables rather than committed to source. The contact metric is only `contact_draft_opened`; it does not mean an email was sent or received.
+- The Clarity project is named “The Sector Journal Preview” and uses the “Other” industry category. Its project ID and the GA4 measurement ID are stored in Netlify environment variables rather than committed to source. The contact metric is only `contact_draft_opened`; it does not mean an email was sent or received.
 - The initial owner dashboard can combine GA4 traffic with Clarity heatmaps/recordings after both are installed and Clarity is linked to the GA4 property. Search Console remains a separate search-performance view; the contact inbox remains the source of truth for actual enquiries. There is no form-submission database or customer dashboard.
 
 ## What is not finished

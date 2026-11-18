@@ -1,14 +1,14 @@
-# IndustryWire
+# The Sector Journal
 
 **Business & Industry News** — an independent industry newsroom in development, with an India and Asia perspective. Paid publishing is a long-term plan, not an active offer.
 
 Live site: <https://siddharth251393-eng.github.io/>
 
-The code remains in GitHub. The existing GitHub Pages site is unchanged; the separate public Netlify preview is connected to this repository at https://dashing-frangipane-55897f.netlify.app/ and intentionally remains noindex. Netlify's connected production branch is `industrywire-netlify-preview`. GitHub's [Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) say Pages is not intended or allowed as free hosting for an online business or a site primarily directed at facilitating commercial transactions. No custom domain or paid hosting has been purchased. The latest changes in the local checkout are uncommitted and are not on the public preview. Read [README-FIRST.txt](README-FIRST.txt) before editing or publishing content.
+The existing GitHub repository is retained as the source-code location; its repository slug and the connected Netlify branch name are technical identifiers, not the publication brand. The public preview is hosted at https://dashing-frangipane-55897f.netlify.app/ from `industrywire-netlify-preview`. The GitHub Pages copy is a separate older deployment. No custom domain or paid hosting has been purchased. Read [README-FIRST.txt](README-FIRST.txt) before editing or publishing content.
 
 The current phase is audience-building: original independent newsroom coverage and reader trust come first. Paid publishing and subscriptions are long-term plans, not services currently open to customers. The site has no checkout, payment, upload, fixed pricing, promised turnaround or external syndication network. Any future paid client publishing must remain separate from independent newsroom coverage. See [BUSINESS-MODEL.md](BUSINESS-MODEL.md) for the working offer, delivery flow and launch gates.
 
-Google Analytics 4 and Microsoft Clarity IDs are configured in Netlify, and both tags load only after a visitor opts in through the consent panel. The Netlify preview remains noindex. Do not enable public indexing before the final domain and launch checks are complete.
+Google Analytics 4 and Microsoft Clarity IDs are configured in Netlify, and both tags load only after a visitor opts in through the consent panel. The Netlify site uses its free `netlify.app` address while the custom domain decision is pending. Check the deployed robots and canonical settings before any domain migration.
 
 ## Pages
 
@@ -26,7 +26,7 @@ Google Analytics 4 and Microsoft Clarity IDs are configured in Netlify, and both
 
 ## Local preview
 
-The latest local build succeeded with `PUBLIC_INDEXING=false`; it generated 33 deployment entries for the noindex Netlify origin. Unpublished drafts remain excluded from the public build. Recent source, article and graphic changes are still uncommitted and have not been deployed. Serve this folder with any static HTTP server to inspect the source locally.
+Unpublished drafts remain excluded from the public build. Local source changes are published to Netlify when the connected branch successfully builds. Serve this folder with any static HTTP server to inspect source changes locally.
 
 ## Production hosting
 
