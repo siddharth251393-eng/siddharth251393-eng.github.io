@@ -1,5 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://siddharth251393-eng.github.io/sitemap.xml
-Sitemap: https://siddharth251393-eng.github.io/news-sitemap.xml

@@ -1,15 +1,15 @@
 /* Small client-side enhancements for the static GitHub Pages site. */
-const INDUSTRYWIRE_EMAIL = window.INDUSTRYWIRE_CONTACT_EMAIL || '';
+const SECTOR_JOURNAL_EMAIL = window.SECTOR_JOURNAL_CONTACT_EMAIL || '';
 
 document.querySelectorAll('[data-current-year]').forEach((node) => {
   node.textContent = String(new Date().getFullYear());
 });
 
 document.querySelectorAll('[data-contact-link]').forEach((link) => {
-  if (INDUSTRYWIRE_EMAIL) link.href = `mailto:${INDUSTRYWIRE_EMAIL}`;
+  if (SECTOR_JOURNAL_EMAIL) link.href = `mailto:${SECTOR_JOURNAL_EMAIL}`;
 });
 document.querySelectorAll('[data-contact-address]').forEach((node) => {
-  node.textContent = INDUSTRYWIRE_EMAIL;
+  node.textContent = SECTOR_JOURNAL_EMAIL;
 });
 
 const menuButton = document.querySelector('.nav-toggle');
@@ -84,13 +84,13 @@ if (contactForm) {
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
     if (!contactForm.reportValidity()) return;
-    if (!INDUSTRYWIRE_EMAIL) {
+    if (!SECTOR_JOURNAL_EMAIL) {
       const status = document.querySelector('[data-form-status]');
       if (status) status.textContent = 'Email contact is not configured. Please use the contact address shown on the page.';
       return;
     }
     const values = new FormData(contactForm);
-    const subject = `[IndustryWire] ${values.get('type') || 'General enquiry'}`;
+    const subject = `[The Sector Journal] ${values.get('type') || 'General enquiry'}`;
     const body = [
       `Name: ${values.get('name')}`,
       `Business email: ${values.get('email')}`,
@@ -100,7 +100,7 @@ if (contactForm) {
       '',
       String(values.get('message') || '')
     ].join('\n');
-    window.location.href = `mailto:${INDUSTRYWIRE_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:${SECTOR_JOURNAL_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     const status = document.querySelector('[data-form-status]');
     if (status) status.textContent = 'Your email app should open with a draft. Review it and choose Send there; the website does not send or store this form.';
   });
@@ -126,7 +126,7 @@ if (articlesList) {
           card.className = 'card';
           const tag = document.createElement('span');
           tag.className = 'tag';
-          tag.textContent = article.section || 'IndustryWire';
+          tag.textContent = article.section || 'The Sector Journal';
           const heading = document.createElement('h3');
           const link = document.createElement('a');
           link.href = target.pathname;

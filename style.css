@@ -6,7 +6,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 .breadcrumbs{max-width:var(--max);margin:18px auto 0;padding:0 26px;color:var(--muted);font-size:11px}.breadcrumbs a{color:var(--blue)}.breadcrumbs [aria-current=page]{color:var(--ink);font-weight:700}
 
-/* IndustryWire homepage refresh, inspired by editorial landing-page structure. */
+/* The Sector Journal homepage refresh, inspired by editorial landing-page structure. */
 .site-header{min-height:78px;padding-top:12px;padding-bottom:12px}
 .site-header nav{gap:clamp(18px,2.15vw,31px);font-size:13px}
 .site-header nav a{border:0;color:#314a58;font-size:13px}

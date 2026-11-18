@@ -1,7 +1,7 @@
-INDUSTRYWIRE — SITE NOTES
+THE SECTOR JOURNAL — SITE NOTES
 
 PROJECT
-IndustryWire is a static, zero-cost business and industry publication concept hosted on GitHub Pages. The site uses the existing IndustryWire identity, HTML, CSS and JavaScript. No build system, paid service, analytics, newsletter backend, database or payment processor is required.
+The Sector Journal is a static, zero-cost business and industry publication concept hosted on GitHub Pages. The site uses the existing The Sector Journal identity, HTML, CSS and JavaScript. No build system, paid service, analytics, newsletter backend, database or payment processor is required.
 
 LIVE SITE
 https://siddharth251393-eng.github.io/
@@ -35,10 +35,10 @@ TECHNICAL FILES
 - robots.txt — crawl access and sitemap locations
 - sitemap.xml — current public page URLs
 - news-sitemap.xml — intentionally empty until real news coverage exists
-- favicon.svg and social-card.svg — IndustryWire brand assets
+- favicon.svg and social-card.svg — The Sector Journal brand assets
 
 GOOGLE SEARCH AND NEWS
 Google may crawl public pages, but indexing, visibility and Google News inclusion are not guaranteed. Verify the site in Search Console, submit sitemap.xml, inspect article URLs and validate structured data after publishing. Google News sitemap guidance: https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap
 
 EDITORIAL AND PUBLISHER DETAILS
-IndustryWire is currently the publication name; legal publishing entity details have not been established on this site. Do not add unverified claims about company status, staff, audience, circulation, credentials or years of operation. Review legal and privacy wording against the actual business and applicable requirements before relying on it as formal advice.
+The Sector Journal is currently the publication name; legal publishing entity details have not been established on this site. Do not add unverified claims about company status, staff, audience, circulation, credentials or years of operation. Review legal and privacy wording against the actual business and applicable requirements before relying on it as formal advice.
