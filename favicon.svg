@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#142a3a"/><text x="32" y="41" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#fff">SJ</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">The Sector Journal</title>
+  <rect width="64" height="64" rx="13" fill="#102b3a"/>
+  <text x="32" y="40" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700" letter-spacing="-2" fill="#ffffff">SJ</text>
+  <rect x="18" y="48" width="28" height="3" rx="1.5" fill="#51a5ae"/>
+</svg>

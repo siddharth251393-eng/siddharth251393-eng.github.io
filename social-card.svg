@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#102b3a"/><path d="M880 0h320v320z" fill="#174e63"/><rect x="88" y="100" width="58" height="58" rx="10" fill="#fff"/><text x="117" y="138" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#142a3a">SJ</text><text x="88" y="270" font-family="Arial,sans-serif" font-size="62" font-weight="700" fill="#fff">The Sector Journal</text><text x="88" y="325" font-family="Arial,sans-serif" font-size="18" letter-spacing="4" fill="#a9d3df">GLOBAL BUSINESS &amp; INDUSTRY NEWS</text><text x="88" y="410" font-family="Arial,sans-serif" font-size="34" fill="#fff">Independent reporting and industry</text><text x="88" y="458" font-family="Arial,sans-serif" font-size="34" fill="#fff">insight for decision-makers.</text><rect x="88" y="515" width="80" height="5" fill="#51a5ae"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">The Sector Journal</title>
+  <desc id="desc">Independent global business and industry news</desc>
+  <rect width="1200" height="630" fill="#102b3a"/>
+  <path d="M830 0h370v370z" fill="#174e63"/>
+  <path d="M0 560h1200v70H0z" fill="#0b202c"/>
+  <rect x="92" y="95" width="78" height="78" rx="12" fill="#ffffff"/>
+  <text x="131" y="149" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700" letter-spacing="-3" fill="#102b3a">SJ</text>
+  <rect x="114" y="157" width="34" height="4" rx="2" fill="#51a5ae"/>
+  <text x="92" y="284" font-family="Georgia, 'Times New Roman', serif" font-size="67" font-weight="700" letter-spacing="-1.2" fill="#ffffff">The Sector Journal</text>
+  <text x="96" y="344" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="4" fill="#a9d3df">GLOBAL BUSINESS &amp; INDUSTRY NEWS</text>
+  <text x="96" y="430" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#ffffff">Independent reporting and industry insight</text>
+  <text x="96" y="478" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#ffffff">for decision-makers around the world.</text>
+  <rect x="96" y="525" width="94" height="5" rx="2" fill="#51a5ae"/>
+</svg>
