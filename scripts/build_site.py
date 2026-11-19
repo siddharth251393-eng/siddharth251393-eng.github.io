@@ -99,6 +99,18 @@ def read_published_articles(indexing_enabled: bool) -> list[dict[str, str]]:
         elif not record["authorUrl"].startswith("https://"):
             raise SystemExit(f"{label}: 'authorUrl' must be a site path or HTTPS URL.")
 
+        if record.get("image"):
+            if not isinstance(record["image"], str) or not record["image"].startswith("/"):
+                raise SystemExit(f"{label}: 'image' must be a safe site-relative path.")
+            image_path = Path(record["image"].lstrip("/"))
+            if ".." in image_path.parts:
+                raise SystemExit(f"{label}: 'image' must be a safe site-relative path.")
+            image_file = (ROOT / image_path).resolve()
+            if not image_file.is_relative_to(ROOT.resolve()) or not image_file.is_file():
+                raise SystemExit(f"{label}: 'image' must point to an existing local asset.")
+        if record.get("imageAlt") and not isinstance(record["imageAlt"], str):
+            raise SystemExit(f"{label}: 'imageAlt' must be a string.")
+
         try:
             published_at = datetime.fromisoformat(record["datePublished"].replace("Z", "+00:00"))
         except ValueError as exc:
@@ -174,6 +186,10 @@ def inject_article_metadata(destination: Path, article: dict[str, str], origin: 
         },
         "mainEntityOfPage": {"@type": "WebPage", "@id": origin + article["url"]},
     }
+    image_path = article.get("image", "")
+    image_url = origin + image_path if image_path else ""
+    if image_url:
+        schema["image"] = [image_url]
     if article.get("dateModified"):
         schema["dateModified"] = article["dateModified"]
 
@@ -201,6 +217,39 @@ def inject_article_metadata(destination: Path, article: dict[str, str], origin: 
             flags=re.IGNORECASE,
         )
         text = text.replace("</head>", tag + "</head>", 1)
+    if image_url:
+        image_tags = {
+            "og:image": image_url,
+            "og:image:type": "image/png",
+            "og:image:width": "1200",
+            "og:image:height": "675",
+            "og:image:alt": article.get("imageAlt", article["title"]),
+        }
+        for name, content in image_tags.items():
+            escaped = html.escape(content, quote=True)
+            tag = f'<meta property="{name}" content="{escaped}">'
+            text = re.sub(
+                rf'\s*<meta\s+property=["\']{re.escape(name)}["\'][^>]*>',
+                "",
+                text,
+                flags=re.IGNORECASE,
+            )
+            text = text.replace("</head>", tag + "</head>", 1)
+        for name, content in {
+            "twitter:card": "summary_large_image",
+            "twitter:title": article["title"],
+            "twitter:description": article["summary"],
+            "twitter:image": image_url,
+        }.items():
+            escaped = html.escape(content, quote=True)
+            tag = f'<meta name="{name}" content="{escaped}">'
+            text = re.sub(
+                rf'\s*<meta\s+name=["\']{re.escape(name)}["\'][^>]*>',
+                "",
+                text,
+                flags=re.IGNORECASE,
+            )
+            text = text.replace("</head>", tag + "</head>", 1)
     if article.get("dateModified"):
         escaped = html.escape(article["dateModified"], quote=True)
         text = text.replace(
